@@ -8,9 +8,9 @@ tags:
   - Data Warehousing
   - Case Study
 layout: project
+permalink: /blog/snowflake-project/
+project_folder: snowflake-project
 ---
-
-# Snowflake Data Warehousing Project
 
 ## Project Overview
 

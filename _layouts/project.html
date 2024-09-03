@@ -1,22 +1,53 @@
 ---
 layout: single
 ---
+<div id="architecture-diagram"></div>
 <div class="project-content">
   {{ content }}
 </div>
-<div class="mermaid" id="architecture-diagram">
-  graph TD
-    A[Start] --> B[End]
-</div>
-<canvas id="performance-chart">
-  <!-- Chart will be inserted here by JavaScript -->
-</canvas>
+<canvas id="performance-chart" width="400" height="200"></canvas>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.3/mermaid.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    mermaid.initialize({ startOnLoad: true });
+document.addEventListener('DOMContentLoaded', function() {
+  console.log("DOM Content Loaded");
+  mermaid.initialize({ 
+    startOnLoad: false,
+    logLevel: 'debug',
+    securityLevel: 'loose'
   });
+  console.log("Mermaid initialized");
+  
+  mermaid.mermaidAPI.initialize({
+    startOnLoad: false
+  });
+
+  var projectName = '{{ page.project_folder }}';
+  if (projectName) {
+    console.log("Loading project scripts for:", projectName);
+    var diagramScript = document.createElement('script');
+    diagramScript.src = '{{ "/assets/js/" | relative_url }}' + projectName + '/diagram.js';
+    diagramScript.onload = function() {
+      console.log("Diagram script loaded successfully");
+      if (typeof renderMermaidDiagram === 'function') {
+        renderMermaidDiagram();
+      } else {
+        console.error("renderMermaidDiagram function not found");
+      }
+    };
+    diagramScript.onerror = function() {
+      console.error("Error loading diagram script for project:", projectName);
+    };
+    document.body.appendChild(diagramScript);
+
+    var chartScript = document.createElement('script');
+    chartScript.src = '{{ "/assets/js/" | relative_url }}' + projectName + '/chart.js';
+    chartScript.onerror = function() {
+      console.error("Error loading chart script for project:", projectName);
+    };
+    document.body.appendChild(chartScript);
+  } else {
+    console.error("Project folder not specified in front matter");
+  }
+});
 </script>
-<script src="{{ '/assets/js/diagram.js' | relative_url }}"></script>
-<script src="{{ '/assets/js/chart.js' | relative_url }}"></script>
