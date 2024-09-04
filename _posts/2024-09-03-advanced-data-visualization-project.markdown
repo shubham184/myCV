@@ -5,8 +5,10 @@ date: 2024-09-03
 categories: [Data Engineering, Supply Chain, Analytics]
 tags: [Apache Kafka, Apache Flink, Elasticsearch, Qlik, Machine Learning, IoT]
 excerpt: "Developed a cutting-edge supply chain analytics platform integrating real-time IoT data, predictive analytics, and interactive visualizations to optimize global logistics operations."
+featured: true
 header:
-teaser: "/assets/images/supply-chain-analytics-teaser.jpg"
+  teaser: "/assets/images/supply-chain-analytics.jpg"
+permalink: /blog/supply-chain-analytics/
 project_folder: "supply-chain-analytics"
 ---
 

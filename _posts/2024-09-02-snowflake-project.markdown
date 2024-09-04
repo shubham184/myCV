@@ -1,15 +1,15 @@
 ---
-title: "Snowflake Data Warehousing Project"
-date: 2024-09-02
-categories:
-  - Blog
-tags:
-  - Snowflake
-  - Data Warehousing
-  - Case Study
 layout: project
+title: "Snowflake Data Warehousing Project: Optimizing Analytics for Scale"
+date: 2024-09-02
+categories: [Data Engineering, Cloud Computing]
+tags: [Snowflake, Data Warehouse, ETL, Business Intelligence]
+excerpt: "Implemented a Snowflake data warehouse solution, achieving a 40% reduction in query times and enabling real-time analytics across diverse data sources for a rapidly growing e-commerce company."
+featured: true
+header:
+  teaser: "/assets/images/snowflake-data-warehousing-teaser.jpg"
 permalink: /blog/snowflake-project/
-project_folder: snowflake-project
+project_folder: "snowflake-project"
 ---
 
 ## Project Overview

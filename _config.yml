@@ -1,43 +1,38 @@
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "sunrise"
-
 # Site Settings
 locale: "en-US"
-title: "Your Name's Portfolio"
-subtitle: "Data Engineering and Cloud Solutions"
-name: "Your Name"
-description: "Showcasing data engineering projects and cloud solutions."
+title: "Shubham's Portfolio"
+subtitle: "BI Architect | Data Analytics | Data Engineering | Cloud Solutions"
+name: "Shubham"
+description: "Showcasing data projects."
 url: "https://shubham184.github.io"
 baseurl: "/myCV"
 repository: "shubham184/myCV"
-
 # Site Author
 author:
   name: "Shubham Nagar"
-  bio: "Data Engineer specializing in cloud data warehousing solutions."
-  location: "Your Location"
+  bio: "Always learning, always growing."
+  location: "Brussels, Belgium"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/yourusername"
+      url: "https://github.com/shubham184"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/yourusername"
-
+      url: "https://www.linkedin.com/in/shubham-nagar-222497151/"
 # Site Footer
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/yourusername"
+      url: "https://github.com/shubham184"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/yourusername"
-
+      url: "https://www.linkedin.com/in/shubham-nagar-222497151/"
 # Reading Files
 include:
   - _pages
-
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
@@ -46,7 +41,6 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-
 # Defaults
 defaults:
   # _posts
@@ -67,7 +61,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show

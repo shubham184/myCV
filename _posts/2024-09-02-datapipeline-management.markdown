@@ -1,14 +1,13 @@
 ---
+layout: project
 title: "Data Pipeline Management with Apache Spark and Talend"
 date: 2024-09-03
-categories:
-  - Blog
-tags:
-  - Apache Spark
-  - Talend
-  - Data Pipelines
-  - Case Study
-layout: project
+categories: [Data Engineering, Data Pipelines]
+tags: [Apache Spark, Talend, ETL, Data Quality]
+excerpt: "Designed and managed data pipelines for data validation, transformation, and cleaning using Apache Spark and Talend, ensuring the highest quality and reliability of data across the organization."
+featured: true
+header:
+  teaser: "/assets/images/data-pipeline-management-teaser.jpg"
 permalink: /blog/data-pipeline-project/
 project_folder: datapipeline-management
 ---
